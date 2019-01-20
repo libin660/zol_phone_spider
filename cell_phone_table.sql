@@ -1,0 +1,57 @@
+DROP TABLE IF EXISTS `cell_phone`;
+CREATE TABLE `cell_phone` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '设备全站唯一id',
+  `fullname` varchar(80) NOT NULL COMMENT '设备全名',
+  `aliasname` varchar(60) NOT NULL DEFAULT '' COMMENT '设备别名',
+  `subtitle` varchar(100) NOT NULL DEFAULT '' COMMENT '简短介绍',
+  `brand` varchar(20) NOT NULL DEFAULT '' COMMENT '品牌',
+  `price` int(6) unsigned NOT NULL DEFAULT '0' COMMENT '价格',
+  `rankscore` float(2,1) NOT NULL DEFAULT '0.0' COMMENT '平均评分',
+  `ranknum` int(6) unsigned NOT NULL DEFAULT '0' COMMENT '评分人数',
+  `capability` float(2,1) NOT NULL DEFAULT '0.0' COMMENT '性价比',
+  `performance` float(2,1) NOT NULL DEFAULT '0.0' COMMENT '性能',
+  `battery` float(2,1) NOT NULL DEFAULT '0.0' COMMENT '续航',
+  `appearance` float(2,1) NOT NULL DEFAULT '0.0' COMMENT '外观',
+  `photograph` float(2,1) NOT NULL DEFAULT '0.0' COMMENT '拍照',
+  `colors` text NOT NULL COMMENT '颜色',
+  `logo` varchar(80) NOT NULL DEFAULT '' COMMENT '设备logo图',
+  `pic_appearance` longtext NOT NULL COMMENT '设备组图',
+  `pic_introduce` longtext NOT NULL COMMENT '产品图解',
+  `listdate` date NOT NULL COMMENT '上市日期',
+  `screenType` varchar(40) NOT NULL DEFAULT '' COMMENT '触摸屏类型',
+  `screenSize` float(2,1) unsigned NOT NULL DEFAULT '0.0' COMMENT '主屏尺寸',
+  `screenMaterial` varchar(40) NOT NULL DEFAULT '' COMMENT '主屏材质',
+  `screenResolution` varchar(15) NOT NULL DEFAULT '' COMMENT '主屏分辨率',
+  `ppi` int(4) unsigned NOT NULL DEFAULT '0' COMMENT '屏幕像素密度',
+  `borderLength` float(2,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '窄边框',
+  `screenRatio` float(3,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '屏幕占比',
+  `operateSystem` varchar(25) NOT NULL DEFAULT '' COMMENT '操作系统',
+  `coreNum` int(2) unsigned NOT NULL DEFAULT '0' COMMENT '核心数',
+  `cpuModel` varchar(30) NOT NULL DEFAULT '' COMMENT 'CPU型号',
+  `cpuFrequency` varchar(30) NOT NULL DEFAULT '' COMMENT 'CPU频率',
+  `gpuModel` varchar(30) NOT NULL DEFAULT '' COMMENT 'GPU型号',
+  `ram` varchar(20) NOT NULL DEFAULT '' COMMENT 'RAM容量',
+  `expanseCapacity` varchar(15) NOT NULL DEFAULT '' COMMENT '扩展容量',
+  `rom` varchar(15) NOT NULL DEFAULT '' COMMENT 'ROM容量',
+  `batterySize` int(5) unsigned NOT NULL DEFAULT '0' COMMENT '电池容量',
+  `backCamera` varchar(25) NOT NULL DEFAULT '0' COMMENT '后置摄像头',
+  `frontCamera` varchar(25) NOT NULL DEFAULT '0' COMMENT '前置摄像头',
+  `measurement` varchar(20) NOT NULL DEFAULT '' COMMENT '手机尺寸',
+  `weight` varchar(10) NOT NULL DEFAULT '' COMMENT '手机重量',
+  `elseScreenParam` text COMMENT '其他屏幕参数',
+  `net4g` text COMMENT '4G网络',
+  `net3g` text COMMENT '3G网络',
+  `net2g` text COMMENT '2G网络',
+  `netBand` text COMMENT '支持频段',
+  `camerafunction` text COMMENT '拍照功能',
+  `elseCameraParam` text COMMENT '其他摄像头参数',
+  `videoCapture` text COMMENT '视频拍摄',
+  `sensorType` text COMMENT '感应器类型',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+
+
+
+
