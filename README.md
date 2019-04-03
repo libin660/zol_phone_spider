@@ -26,6 +26,7 @@
     
     - 本仓库仅用于技术开源，供爬虫爱好者研究。切勿使用本仓库用于非法商业行为，否则请自行承担责任，本人在此申明不承担任何由此生成的法律责任。
     
-    
+[![LICENSE](https://img.shields.io/badge/license-NPL%20(The%20996%20Prohibited%20License)-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
     
     
